@@ -1,11 +1,36 @@
 {
   "name": "webdevelopment",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "main": "todo.js",
   "scripts": {
-    "test": "test"
+    "test": "jest",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint",
+      "prettier --write ."
+    ]
   },
   "author": "rakesh kumar",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rakeshkumartulas/webdev.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rakeshkumartulas/webdev/issues"
+  },
+  "homepage": "https://github.com/rakeshkumartulas/webdev#readme",
+  "description": "",
+  "dependencies": {
+    "jest": "^29.3.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.27.0",
+    "eslint-plugin-react": "^7.31.10",
+    "husky": "^8.0.2",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1"
+  }
 }
